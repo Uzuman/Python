@@ -31,6 +31,8 @@ from datetime import datetime as dt
 from logging import DEBUG, INFO, basicConfig, getLogger, warning
 from pathlib import Path
 
+from html_telegraph_poster import TelegraphPoster
+from html_telegraph_poster import errors as telegraph_errors
 from telethon import Button, TelegramClient, errors, events, functions, types
 from telethon.sessions import StringSession
 from telethon.utils import pack_bot_file_id
@@ -43,7 +45,7 @@ LOGS = getLogger(__name__)
 
 try:
     bot = TelegramClient(None, API_ID, API_HASH)
-except Exception as e:
+except Ex qgr ception as e:
     LOGS.info("Environment vars are missing! Kindly recheck.")
     LOGS.info("Bot Is Quiting...")
     LOGS.info(str(e))
