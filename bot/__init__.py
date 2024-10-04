@@ -45,7 +45,7 @@ LOGS = getLogger(__name__)
 
 try:
     bot = TelegramClient(None, API_ID, API_HASH)
-except Ex qgr ception as e:
+except Exception as e:
     LOGS.info("Environment vars are missing! Kindly recheck.")
     LOGS.info("Bot Is Quiting...")
     LOGS.info(str(e))
