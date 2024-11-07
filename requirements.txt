@@ -5,5 +5,3 @@ pymediainfo
 tgcrypto
 Telethon
 pyaesni
-html_telegraph_poster
-lxml[html_clean]
